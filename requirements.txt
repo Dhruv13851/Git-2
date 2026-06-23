@@ -1,0 +1,11 @@
+langchain
+langchain-core
+langchain-groq
+
+langchain-mcp-adapters
+
+mcp
+
+python-dotenv
+
+pydantic
