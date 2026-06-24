@@ -60,7 +60,8 @@ class GitHubAgent:
         self.agent = create_agent(
             model=llm,
             tools=tools,
-            system_prompt=SYSTEM_PROMPT
+            system_prompt=SYSTEM_PROMPT,
+            debug=True
         )
 
     async def invoke(self, query: str):

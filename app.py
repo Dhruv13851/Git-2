@@ -159,6 +159,7 @@ async def main():
         selected_tools = [
             t for t in tools
             if t.name in [
+                "list_user_repositories",
                 "search_repositories",
                 "create_repository",
                 "get_file_contents",
@@ -184,7 +185,8 @@ async def main():
 
             print("\nRAW RESULT:")
             pprint.pp(result)
-            print()
+            
+            print(result["messages"][-1].content)
 
     # except Exception as e:
     #     print(f"\nAn error occurred during execution: {e}\n")
